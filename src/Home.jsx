@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import CovidByState from "./CovidByState";
-
+import CovidByWorld from "./CovidByWorld";
 import About from "./About";
 
 
@@ -10,9 +10,9 @@ class Home extends Component {
     return (
       <>
         <div className="data_flex">
-          {/* <div className="card_grid">
-            <CovidInTheWorld />
-          </div> */}
+          { <div className="card_grid">
+            <CovidByWorld />
+          </div> }
 
           <div className="card_grid">
             <CovidByState />

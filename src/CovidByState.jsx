@@ -10,7 +10,7 @@ class CovidByState extends Component {
     this.state = {
       isAlert: false,
       alert: "",
-      country: "Indonesia",
+      country: "China",
       countryList: {},
       confirmed: "",
       recovered: "",
