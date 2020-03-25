@@ -11,7 +11,7 @@ class CovidByState extends Component {
       isAlert: false,
       alert: "",
       country: "China",
-      countryList: {},
+      countryList: [],
       confirmed: "",
       recovered: "",
       deaths: ""
@@ -114,11 +114,11 @@ class CovidByState extends Component {
                   value={this.state.country}
                   onChange={this.handleChange}
                 >
-                  {Object.entries(this.state.countryList).map(
-                    ([key, value], index) => {
+                  {this.state.countryList.map((item) => {
+                                
                       return (
-                        <option key={index} id={value} value={key}>
-                          {key}
+                        <option>
+                          {item.name}
                         </option>
                       );
                     }
