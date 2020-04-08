@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Button from "./Button";
 
-import { Pie } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 
 class CovidByState extends Component {
   constructor(props) {
@@ -119,7 +119,9 @@ class CovidByState extends Component {
                       return (
                         <option>
                           {item.name}
+                          
                         </option>
+                        
                       );
                     }
                   )}
@@ -136,7 +138,7 @@ class CovidByState extends Component {
 
             <div className="data_flex">
               <div className="card_grid width_80">
-                <Pie data={graph} />
+                <Doughnut data={graph} />
                 <div className="card_total">
                   <h2 className="text_center mg-20">
                     {totalReported}
