@@ -50,7 +50,7 @@ export class CovidRecovered extends Component {
                   {item.provinsi === "Indonesia" ? (
                     ""
                   ) : (
-                    <p>{`Sembuh: ${item.kasusPosi}`}</p>
+                    <p>{`Positif: ${item.kasusPosi}`}</p>
                   )}
                 </div>
               );
