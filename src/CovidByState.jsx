@@ -114,10 +114,10 @@ class CovidByState extends Component {
                   value={this.state.country}
                   onChange={this.handleChange}
                 >
-                  {this.state.countryList.map((item) => {
+                  {this.state.countryList.map((item, index) => {
                                 
                       return (
-                        <option>
+                        <option key={index}>
                           {item.name}
                           
                         </option>

@@ -17,7 +17,7 @@ class CovidInTheWorld extends Component {
     axios
       .get(baseURL)
       .then(res => {
-        // console.log(res);
+        //  console.log(res);
         this.setState({
           confirmed: res.data.jumlahKasus,
           recovered: res.data.sembuh,
